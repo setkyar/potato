@@ -13,9 +13,26 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/bootstrap-timepicker.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="dist/carousel.css" rel="stylesheet">
+    <style type="text/css">
+    .top-table{
+        cursor: pointer;
+        border: none;
+    }
+    .no-padding{
+        padding: 0px;
+        list-style: none;
+    }
+    .popover{
+        width: 150px;
+    }
+    .add-border{
+        border: 1px solid #111;
+    }
+    </style>
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -23,19 +40,19 @@
 <body style="background:#e3da9e;">
     <div id="nav" style="width:100%;background: #d9212b;height: 130px;">
         <div style="width: 70%;margin: 0 auto;">
-            <a href="#"><img src="dist/images/logo.png" style="width:45%;margin-top: 25px;"></a>
+            <a href="#"><img src="dist/images/logo.png" style="width:35%;margin-top: 25px;"></a>
         </div>
     </div>
     <div class="container">
         <div style="width: 70%;margin: 0 auto;">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="dist/images/tomatoes_front.png" style="width: 100%;margin-top:-60px;margin-left:30px;">
+                    <img src="dist/images/tomatoes_front.png" style="width: 100%;margin-top:-70px;margin-left:30px;">
                 </div>
             </div>
             <div class="row" id="reserve">
                 <div class="col-md-12">
-                    <h2 style="text-align:center">Reserve Your Order Now!</h2>
+                    <h2 style="text-align:center;color: #111;font-family: 'Josefin Slab', serif;">Reserve Your Order Now!</h2>
                 </div>
             </div>
             <hr>
@@ -44,57 +61,57 @@
                 <div class="col-md-12">
                     <h4 style="text-align:center; color:red">(Please select Table)</h4>
                 </div>
-                <div class="col-lg-3">
-                    <img src="dist/images/table.png" style="width:100px; height:50px" title="This Table was Available" class="top-table">
-                    <input type="checkbox">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+                    <img src="dist/images/table.png" style="width:100px; height:50px" title="<p class='text-center'><b>A-001</b></p>" class="top-table" data-content="<p class='text-center'>Near from exit</p><p class='text-center'>Capacity - 4</p><p class='text-center'>Status - <span class='label label-success'><i class='glyphicon glyphicon-ok'></i></span></p>">
+                    
                 </div>
-                <div class="col-lg-3">
-                    <img src="dist/images/table_pink.png" style="width:100px; height:50px" title="This table is for premier member only" class="top-table">
-                    <input type="checkbox">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+                    <img src="dist/images/table_pink.png" style="width:100px; height:50px" title="<p class='text-center'><b>A-002</b></p>" class="top-table" data-content="<p class='text-center'>Near from exit</p><p class='text-center'>Capacity - 4</p><p class='text-center'>Status - <span class='label label-danger'><i class='glyphicon glyphicon-lock'></i></span></p>">
+                    
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table_red.png" style="width:100px; height:50px" title="Currently table two was taken. It will be avilable at 2pm." class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table.png" style="width:100px; height:50px" title="This table was available" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+                    <img src="dist/images/table_pink.png" style="width:100px; height:50px" title="This table is for premium member only" class="top-table">
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table_pink.png" style="width:100px; height:50px" title="This table is for premier member only" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
-                <div class="col-lg-3">
-                    <img src="dist/images/table_pink.png" style="width:100px; height:50px" title="This table is for premier member only" class="top-table">
-                    <input type="checkbox">
-                </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table.png" style="width:100px; height:50px" title="This table was available" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table.png" style="width:100px; height:50px" title="This table was available" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table.png" style="width:100px; height:50px" title="This table was available" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table_red.png" style="width:100px; height:50px" title="This table is for premier member only" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table_red.png" style="width:100px; height:50px" title="This table is for premier member only" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                     <img src="dist/images/table_red.png" style="width:100px; height:50px" title="This table is for premier member only" class="top-table">
-                    <input type="checkbox">
+                    
                 </div>
             </div>
             <hr>
@@ -219,7 +236,15 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/bootstrap-timepicker.min.js"></script>
     <script type="text/javascript">
-        $('.top-table').popover(top);
+        $('.top-table').popover({
+            html : true
+        });
+
+        $('.top-table').click(function() {
+
+            $(this).toggleClass('add-border');
+        })
+
         $('.table-button').popover(top);
         $('.time').timepicker();
     </script>
